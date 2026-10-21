@@ -14,7 +14,7 @@ This log records test attempts related to the reported matchmaking responsivenes
 - Network type: To be recorded for each test
 - Test date: To be recorded
 
-## Test Cases
+## Test Cases 
 
 | Test ID | Scenario | Expected Result | Actual Result | Status |
 |---|---|---|---|---|
