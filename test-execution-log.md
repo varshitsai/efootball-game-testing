@@ -1,49 +1,47 @@
-# Test Cases — Swag Labs Demo Store
+# Test Execution Log — eFootball Matchmaking
 
-**Application:** https://www.saucedemo.com/  
-**Testing type:** Manual functional testing  
-**Execution date:** 21 October 2026  
-**Environment:** Windows laptop, Chrome browser
+## Purpose
 
-## Test Scope
+Record testing related to the previously observed intermittent matchmaking freeze after switching from eFootball to another app.
 
-- Login validation
-- Product details
-- Add-to-cart functionality
-- Remove-from-cart functionality
-- Checkout form validation
+## Test Environment
 
-## Test Cases and Execution Results
+- Device: iPhone 15 Plus
+- iOS version: Not recorded
+- eFootball version: Not recorded
+- Network type: Not recorded
+- Test dates: Exact dates not recorded
+- Update context: eFootball has been updated since the original incidents.
 
-| Test ID | Scenario | Expected Result | Actual Result | Status |
-|---|---|---|---|---|
-| TC-01 | Valid login | Products page opens | Logged in successfully and reached the products page. | Pass |
-| TC-02 | Invalid password | Login is rejected with an error | Login was rejected and a username/password mismatch error appeared. | Pass |
-| TC-03 | Empty login fields | Login is prevented and validation appears | Login was rejected with the message "Username is required". | Pass |
-| TC-04 | View product details | Correct product details appear | Sauce Labs Backpack details, description, price ($29.99), and Add to Cart button were displayed. | Pass |
-| TC-05 | Add product to cart | Selected product appears in the cart | Backpack was added successfully, the button changed to Remove, and the cart badge displayed 1. | Pass |
-| TC-06 | Remove product | Product is removed | The Remove action succeeded and the cart became empty. | Pass |
-| TC-07 | Checkout validation | Checkout does not proceed without required details | Checkout was blocked and the message "Error: First Name is required" appeared. | Pass |
+## Test Cases and Results
 
-## Test Summary
+| Test ID | Scenario | Actual Result | Status |
+|---|---|---|---|
+| TC-01 | Switch to Instagram briefly during online matchmaking, then return to eFootball. | Approximately 5–10 recent attempts reportedly completed normally. The original freeze was not reproduced. | Pass for reported attempts |
+| TC-02 | Switch to a different app during matchmaking, then return. | Not executed as a separate test. | Not Run |
+| TC-03 | Keep eFootball in the foreground during matchmaking. | Not executed. | Not Run |
+| TC-04 | If the freeze occurs, wait and check whether the game recovers without restarting. | Not executed because the issue was not reproduced in recent attempts. | Not Run |
 
-- Total test cases: 7
-- Executed: 7
-- Passed: 7
-- Failed: 0
-- Blocked: 0
-- Not Run: 0
-- Confirmed defects identified: 0
+## Results Summary
 
-## Test Status Definitions
+- Test scenarios executed: 1
+- Test scenarios passed: 1
+- Test scenarios failed: 0
+- Test scenarios blocked: 0
+- Test scenarios inconclusive: 0
+- Test scenarios not run: 3
 
-- **Pass:** Observed behaviour matched the expected result.
-- **Fail:** Observed behaviour differed from the expected result.
-- **Blocked:** An issue prevented test execution.
-- **Not Run:** The test has not been executed.
+TC-01 represents one scenario tested across approximately 5–10 attempts, based on recollection. Exact dates and attempt counts were not recorded at the time.
 
-## Execution Notes
+## Limitations
 
-These seven scenarios were manually executed against the Swag Labs demo store. Results reflect the behaviour observed during execution. No confirmed defects were identified in the tested scenarios.
+- No screenshots or recordings of the original incident are available.
+- iOS and game versions were not recorded.
+- The original issue occurred intermittently over days or months.
+- The game was updated after the original incidents, but the update cannot be confirmed as the cause of the improvement.
+- Recent successful attempts do not prove the issue is permanently fixed.
+- The root cause remains unknown.
 
-This project demonstrates introductory experience with manual functional testing, test execution, validation checks, and documenting expected versus actual results.
+## Future Testing
+
+If the issue occurs again, record the date, software versions, network type, exact actions, recovery time, whether restarting was required, and any available evidence.
