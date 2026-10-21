@@ -47,6 +47,25 @@ The network appeared stable to me at the time, but this does not rule out connec
 5. Check whether the matchmaking cancel control responds.
 6. Record the device OS version, game version, and evidence for each attempt.
 
+## Recent Retest Results
+
+After the original incidents, I tested switching to Instagram and returning to eFootball during matchmaking approximately 5–10 times. The original freeze was not reproduced in these recent attempts.
+
+- **Result:** Issue not reproduced in recent attempts
+- **Game update:** The game was updated after the original incidents
+- **Exact attempt count, test dates, and software versions:** Not recorded
+- **Root cause or confirmed fix:** Unknown
+
+These results do not prove that the issue is permanently fixed or that the game update caused the improvement.
+
+## Further Testing Plan
+
+1. If the original issue recurs, record the exact steps, date, iOS version, and game version.
+2. Capture a screen recording or screenshots if possible.
+3. Test switching to another app separately from switching to Instagram.
+4. Compare results with matchmaking while keeping eFootball in the foreground.
+5. Record each attempt and its outcome.
+
 ## Support Contact
 
 I received a KONAMI customer-support acknowledgement, but I cannot confirm whether it concerned this specific issue. No confirmed investigation result or fix is available for this case.
