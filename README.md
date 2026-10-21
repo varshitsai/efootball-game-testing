@@ -11,7 +11,7 @@ A mobile game-testing case study documenting an intermittent matchmaking respons
 - **Device:** iPhone 15 Plus
 - **Testing type:** Exploratory testing
 - **Feature:** Online matchmaking
-- **Case status:** Retrospective documentation based on personal observation
+- **Case status:** Original issue documented retrospectively; recent retest results recorded
 
 ## Issue Summary
 
@@ -32,31 +32,23 @@ The game should remain responsive when returning from another app. Matchmaking s
 - Waiting approximately 5–10 minutes did not resolve the issue.
 - Restarting the game restored normal operation.
 
-## Testing Limitations
+## Original Testing Limitations
 
-The report is based on recollection. The exact game version, iOS version, incident date, and network measurements were not recorded. No screenshot or screen recording of the incident is available.
+The original report is based on recollection. The exact game version, iOS version, incident date, and network measurements were not recorded. No screenshot or screen recording of the original incident is available.
 
 The network appeared stable to me at the time, but this does not rule out connectivity problems. The underlying cause has not been established.
-
-## Further Testing Plan
-
-1. Repeat the same steps with Instagram and record the outcome.
-2. Compare the result with switching to a different app.
-3. Run a control test without leaving eFootball.
-4. Test different background durations.
-5. Check whether the matchmaking cancel control responds.
-6. Record the device OS version, game version, and evidence for each attempt.
 
 ## Recent Retest Results
 
 After the original incidents, I tested switching to Instagram and returning to eFootball during matchmaking approximately 5–10 times. The original freeze was not reproduced in these recent attempts.
 
 - **Result:** Issue not reproduced in recent attempts
-- **Game update:** The game was updated after the original incidents
-- **Exact attempt count, test dates, and software versions:** Not recorded
+- **Game update:** eFootball was updated after the original incidents
+- **Exact attempt count and test dates:** Not recorded
+- **iOS and game versions:** Not recorded
 - **Root cause or confirmed fix:** Unknown
 
-These results do not prove that the issue is permanently fixed or that the game update caused the improvement.
+These results do not prove that the issue is permanently fixed. The game update may be relevant, but a causal relationship has not been established.
 
 ## Further Testing Plan
 
@@ -65,6 +57,7 @@ These results do not prove that the issue is permanently fixed or that the game 
 3. Test switching to another app separately from switching to Instagram.
 4. Compare results with matchmaking while keeping eFootball in the foreground.
 5. Record each attempt and its outcome.
+6. If the freeze recurs, document whether waiting or cancelling matchmaking recovers the game, and whether restarting is required.
 
 ## Support Contact
 
@@ -75,7 +68,8 @@ I received a KONAMI customer-support acknowledgement, but I cannot confirm wheth
 - Exploratory testing
 - Mobile application testing
 - Writing expected and actual results
-- Documenting reproducible test steps
+- Documenting test scenarios and outcomes
+- Recording retest results
 - Identifying evidence gaps
 - Separating observed behaviour from possible root causes
 
@@ -85,13 +79,15 @@ This is an independent testing case study based on personal gameplay observation
 
 ## Project Files
 
-- [**Detailed Bug Report — EF-MOB-001**](bug-report.md): Structured report with reproduction steps, expected and actual results, severity rationale, environment details, and testing limitations.
+- [**Detailed Bug Report — EF-MOB-001**](bug-report.md): Structured report with reproduction steps, expected and actual results, severity rationale, environment details, retest status, and testing limitations.
+- [**Test Execution Log**](test-execution-log.md): Records the recent retest scenario, results, and testing limitations.
 
 ## Project Status
 
-- [x] Documented the observed issue and expected behaviour
+- [x] Documented the originally observed issue and expected behaviour
 - [x] Created a structured bug report
-- [ ] Reproduce the issue and record test results
+- [x] Recorded recent retest results
 - [ ] Capture evidence if the issue occurs again
+- [ ] Record exact software versions and test dates in a future test session
 
-**Note:** The issue is documented retrospectively from personal recollection. The reproduction steps and root cause remain unverified.
+**Note:** The original incident is documented retrospectively from personal recollection. Recent attempts did not reproduce it; the root cause and any permanent fix remain unconfirmed.
