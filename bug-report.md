@@ -60,7 +60,17 @@ The root cause is unknown. Potential investigation areas include app lifecycle h
 The continued movement of the loading animation does not establish that the rest of the game is functioning correctly.
 
 ## Retest Status
-Not retested. Further attempts are needed to establish reproducibility and capture current environment details.
+
+**Recent retest result: Issue not reproduced in approximately 5–10 attempts.**
+
+After the original incidents, eFootball was updated. In approximately 5–10 recent attempts, switching to Instagram and returning to eFootball during matchmaking did not reproduce the previously observed freeze.
+
+- **Retest outcome:** Not reproduced in recent attempts
+- **Exact attempt count and dates:** Not recorded
+- **iOS and game versions:** Not recorded
+- **Cause of improvement:** Unknown
+
+These results do not confirm that the issue is permanently fixed. The game update may be relevant, but a causal relationship has not been established. Further testing is needed if the issue recurs.
 
 ## Support Status
 A KONAMI support acknowledgement exists, but the tester cannot confirm whether it concerned this issue. No confirmed investigation result or fix is available for this case.
