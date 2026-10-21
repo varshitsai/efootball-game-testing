@@ -63,3 +63,16 @@ I received a KONAMI customer-support acknowledgement, but I cannot confirm wheth
 ## Disclaimer
 
 This is an independent testing case study based on personal gameplay observations. It is not an official KONAMI report, and no affiliation with or endorsement by KONAMI is implied.
+
+## Project Files
+
+- [**Detailed Bug Report — EF-MOB-001**](bug-report.md): Structured report with reproduction steps, expected and actual results, severity rationale, environment details, and testing limitations.
+
+## Project Status
+
+- [x] Documented the observed issue and expected behaviour
+- [x] Created a structured bug report
+- [ ] Reproduce the issue and record test results
+- [ ] Capture evidence if the issue occurs again
+
+**Note:** The issue is documented retrospectively from personal recollection. The reproduction steps and root cause remain unverified.
